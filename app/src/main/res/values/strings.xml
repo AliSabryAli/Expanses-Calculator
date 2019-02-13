@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My expenses</string>
+    <string name="action_settings">Total</string>
+    <string name="add_item">Add First Item</string>
+    <string name="enter_item">Add Item</string>
+    <string name="enter_task">enter item</string>
+    <string name="no_task">enter price</string>
+    <string name="save">Save</string>
+    <string name="title_activity_list">My expenses List</string>
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+    <string name="dialog_msg">Delete item ?</string>
+    <string name="price">price :</string>
+    <string name="addedon">Added on :</string>
+    <string name="total_expen">Your Total Expenses</string>
+</resources>

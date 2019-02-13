@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewID"
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tvNameID"
+                style="@style/ItemListTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text" />
+
+            <TextView
+                android:id="@+id/tvPriceID"
+                style="@style/PriceListTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNameID"
+                android:layout_toRightOf="@id/tvPriceLableID"
+                android:text="price" />
+
+            <TextView
+                android:id="@+id/tvPriceLableID"
+                style="@style/PriceListTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNameID"
+                android:text="@string/price" />
+
+
+            <TextView
+                android:id="@+id/tvDateID"
+                style="@style/PriceListTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPriceID"
+                android:layout_toRightOf="@id/tvDateLableID"
+                android:text="Date" />
+            <TextView
+                android:id="@+id/tvDateLableID"
+                style="@style/PriceListTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPriceID"
+                android:text="@string/addedon" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tvDateID"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btEditID"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@android:drawable/ic_menu_edit" />
+
+                <Button
+                    android:id="@+id/btDeleteID"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@android:drawable/ic_menu_delete" />
+
+            </TableRow>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
